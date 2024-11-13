@@ -21,7 +21,7 @@ const UserList = async() => {
             <UserInformation/>
 
             {userlist.map((elem,index)=>(
-                <h3>{`User First Name  : ${elem.firstName}`}</h3>
+                <h3 key={index}>{`User First Name  : ${elem.firstName}`}</h3>
             ))}
         </>
     )
