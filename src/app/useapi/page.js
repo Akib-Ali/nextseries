@@ -31,7 +31,7 @@ const ProductPage = () => {
              <h1> Product Page listing</h1> 
             {products.map((elem,index)=>{
                 return(
-                    <div>
+                    <div key={index}>
                         <p>{`Title is : ${elem.title}`}</p>
                         <p>{`Price is : ${elem.price}`}</p>
                     </div>
